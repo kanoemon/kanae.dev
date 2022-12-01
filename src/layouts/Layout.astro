@@ -17,6 +17,7 @@ const { title } = Astro.props;
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic" rel="stylesheet">
 		<script src="https://kit.fontawesome.com/86ced1b7f3.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
@@ -31,8 +32,9 @@ const { title } = Astro.props;
 		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
 	}
 	html {
-		font-family: system-ui, sans-serif;
+		font-family: "Sawarabi Gothic";
 		background-color: #F6F6F6;
+		letter-spacing: .08em;
 	}
 	code {
 		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
