@@ -1,4 +1,7 @@
 ---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
 export interface Props {
 	title: string;
 }
@@ -7,16 +10,19 @@ const { title } = Astro.props;
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<script src="https://kit.fontawesome.com/86ced1b7f3.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
+		<Header />
 		<slot />
+		<Footer />
 	</body>
 </html>
 <style is:global>
