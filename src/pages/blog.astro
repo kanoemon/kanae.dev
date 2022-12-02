@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 
 const allPosts = await Astro.glob('../pages/posts/*.md');
+allPosts.sort((a, b) => Date.parse(b.frontmatter.date) - Date.parse(a.frontmatter.date));
 ---
 
 <Layout title="Blog・kanae.dev">
