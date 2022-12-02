@@ -5,6 +5,7 @@ author: Anonymous
 summary: hogehoge
 tags:
   - post
+thumbnail: https://astro.build/assets/blog/astro-1-release-update/cover.jpeg
 ---
 **hogehogehoge**
 
