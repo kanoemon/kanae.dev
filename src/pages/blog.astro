@@ -1,0 +1,21 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const allPosts = await Astro.glob('../pages/posts/*.md');
+---
+
+<Layout title="Blog・kanae.dev">
+	<main>
+        <div class="container mx-auto max-w-5xl">
+            {allPosts.map((post) => 
+                <article class="mb-20">
+                    <a href={post.url}>
+                        <h2 class="text-3xl">{post.frontmatter.title}</h2>
+                    </a>
+                    <time class="text-sm text-[#9d9d9d]">2022-10-2</time>
+                    <p class="mt-4">aaaaaアイウエオあああ</p>
+                </article>
+            )}
+        </div>
+	</main>
+</Layout>
