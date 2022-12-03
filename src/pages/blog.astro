@@ -9,16 +9,18 @@ allPosts.sort((a, b) => Date.parse(b.frontmatter.date) - Date.parse(a.frontmatte
 	<div>
         <h1 class="mb-8">ALL POSTS</h1>
         {allPosts.map((post) => 
-            <article class="mb-20 flex justify-between">
-                <div>
-                    <a href={post.url}>
-                        <h2 class="text-3xl">{post.frontmatter.title}</h2>
-                    </a>
-                    <time class="text-sm text-[#9d9d9d]">{post.frontmatter.date}</time>
-                    <p class="mt-4">{post.frontmatter.summary}</p>
-                </div>
-                <div>
-                    <img src={post.frontmatter.thumbnail} class="object-cover h-48 w-96">
+            <article class="mb-20">
+                <a href={post.url}>
+                    <h2 class="text-2xl">{post.frontmatter.title}</h2>
+                </a>
+                <p class="my-2.5">{post.frontmatter.summary}</p>
+                <div class="flex">
+                    <time class="text-sm text-[#6c757d]">{post.frontmatter.date}</time>
+                    <div class="text-sm text-[#6c757d]">
+                        {post.frontmatter.tags.map((tag) => (
+                            <span><a href={`/tags/${tag}`}>{tag}</a></span>
+                        ))}
+                    </div>
                 </div>
             </article>
         )}
