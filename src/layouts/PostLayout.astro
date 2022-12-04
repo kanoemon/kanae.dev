@@ -9,7 +9,7 @@ const { frontmatter } = Astro.props;
 		<article>
 			<header class="my-6">
 				<h1 class="text-4xl mb-1">{frontmatter.title}</h1>
-				<time class="text-sm">{frontmatter.date}</time>
+				<time class="text-sm">{new Date(frontmatter.date).toLocaleDateString()}</time>
 			</header>
 			<section class="pt-12">
 				<slot />
