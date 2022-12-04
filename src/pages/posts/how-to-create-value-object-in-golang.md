@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/Layout.astro
+layout: ../../layouts/PostLayout.astro
 title: Goで値オブジェクトを実装する
 tags: ["go", "ddd"]
 date: "2022/11/03 00:00:00"

@@ -1,0 +1,53 @@
+---
+import Layout from './Layout.astro';
+
+const { frontmatter } = Astro.props;
+---
+
+<Layout title={frontmatter.title}>
+	<main class="container mx-auto max-w-3xl p-16">
+		<article>
+			<header class="my-6">
+				<h1 class="text-4xl mb-1">{frontmatter.title}</h1>
+				<time class="text-sm">{frontmatter.date}</time>
+			</header>
+			<section class="pt-12">
+				<slot />
+			</section>
+		</article>
+	</main>
+</Layout>
+
+<style is:global>
+	h2 {
+		@apply text-3xl mt-16;
+	}
+
+	p {
+		@apply mt-9;
+	}
+
+	article a {
+		@apply underline;
+	}
+
+	ul, ol, pre {
+		@apply mt-3;
+	}
+
+	pre {
+		@apply p-4;
+	}
+
+	article ul, ol {
+		@apply pl-10;
+	}
+
+	article ul li {
+		@apply list-disc;
+	}
+
+	article ol li {
+		@apply list-decimal;
+	}
+</style>

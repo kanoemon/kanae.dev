@@ -6,7 +6,7 @@ allPosts.sort((a, b) => Date.parse(b.frontmatter.date) - Date.parse(a.frontmatte
 ---
 
 <Layout title="Blog・kanae.dev">
-	<div>
+    <main class="container mx-auto max-w-5xl">
         <h1 class="mb-8">ALL POSTS</h1>
         {allPosts.map((post) => 
             <article class="mb-20">
@@ -24,5 +24,5 @@ allPosts.sort((a, b) => Date.parse(b.frontmatter.date) - Date.parse(a.frontmatte
                 </div>
             </article>
         )}
-	</div>
+	</main>
 </Layout>
