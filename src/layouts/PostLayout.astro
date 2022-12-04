@@ -14,20 +14,37 @@ const { frontmatter } = Astro.props;
 			<section class="pt-12">
 				<slot />
 			</section>
+			<footer class="mt-16">
+				<div>
+					{frontmatter.tags.map((tag: any) => (
+						<span class="text-sm">
+							<a href={`/tags/${tag}`} class="py-1 px-2 border-solid border border-gray-700 rounded-md">{tag}</a>
+						</span>
+					))}
+				</div>
+			</footer>
 		</article>
 	</main>
 </Layout>
 
 <style is:global>
+	h2, h3 {
+		@apply mt-16;
+	}
+
 	h2 {
-		@apply text-3xl mt-16;
+		@apply text-3xl;
+	}
+
+	h3 {
+		@apply text-2xl;
 	}
 
 	p {
 		@apply mt-9;
 	}
 
-	article a {
+	section a {
 		@apply underline;
 	}
 
