@@ -2,7 +2,6 @@
 layout: ../../layouts/PostLayout.astro
 title: switch文について考える
 tags: ["プログラミング"]
-date: "2020/11/03 00:00:00"
 date: 2020-11-03T00:00:00.001Z
 ---
 
