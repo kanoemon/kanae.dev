@@ -1,7 +1,8 @@
 ---
+layout: ../../layouts/PostLayout.astro
 title: PHPで複数プロセスを制御する
-tags: ["PHP", "Linux"]
-date: "2020/10/23 00:00:00"
+tags: ["php", "linux"]
+date: 2020-10-23T00:00:00.001Z
 ---
 
 PHPで複数プロセスの制御のやり方。

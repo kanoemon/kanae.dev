@@ -1,7 +1,8 @@
 ---
+layout: ../../layouts/PostLayout.astro
 title: npmパッケージを定期的に更新する仕組み
 tags: ["nodejs", "operation"]
-date: "2022/09/10 00:00:00"
+date: 2022-09-10T00:00:00.001Z
 ---
 
 この<a href="https://kanoe.dev/" target="_blank">kanoe.dev</a>のブログはNuxt.jsで作成しており、Node.jsのライブラリの定期的な更新作業が必要となっています。
@@ -54,7 +55,7 @@ test('index test', async ({ page }) => {
 E2EテストはGithub Actionsで自動で走らせるようにしています。  
 Github Actionsのワークフローは以下です。
 
-```yml
+```yaml
 name: E2E test
 
 on: push

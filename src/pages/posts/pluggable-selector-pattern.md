@@ -1,7 +1,8 @@
 ---
+layout: ../../layouts/PostLayout.astro
 title: 使い方注意なPluggable Selectorパターン
-tags: ["PHP", "デザインパターン"]
-date: "2020/10/03 00:00:00"
+tags: ["php", "design patterns"]
+date: 2020-10-03T00:00:00.001Z
 ---
 
 <a href="https://www.amazon.co.jp/dp/B077D2L69C/ref=dp-kindle-redirect?_encoding=UTF8&amp;btkr=1" target="_blank">テスト駆動開発</a>の本で学んだPluggable Selectorパターンのまとめです。
@@ -18,7 +19,8 @@ date: "2020/10/03 00:00:00"
 
 #### 1. Greetingを継承してサブクラスを追加するパターン
 
-```php[GreetingJapanese.php]
+GreetingJapanese.php
+```php
 <?php
 
 namespace DesignPatterns\PluggableSelector;
@@ -32,7 +34,8 @@ class GreetingJapanese extends Greeting
 }
 ```
 
-```php[GreetingEnglish.php]
+GreetingEnglish.php
+```php
 <?php
 
 namespace DesignPatterns\PluggableSelector;
@@ -63,7 +66,8 @@ echo $greetingEnglish->greet();
 今回のようなサブクラスを追加するパターンだと、1つのメソッドしか実装されていないクラスが新しく作られることになり、少し過剰な実装にも見えます。
 そのため、既存のGreetingクラスに新しくメソッドを追加し、そのメソッドで使うメソッドを切り替えられるように変えてみます。
 
-```php[Greeting.php]
+Greeting.php
+```php
 <?php
 
 namespace DesignPatterns\PluggableSelector;
@@ -110,7 +114,8 @@ echo $greeting->greet('english');
 今追加している機能は日本語と英語だけですが、これが中国語、ドイツ語、フランス語・・・と増えていくとgreetメソッドにどんどん分岐が増えていくことになります。
 そのため、今度は引数で受け取った文字列からメソッド名を動的に生成し、分岐を追加しなくてもすむようにしてみます。
 
-```php[Greeting.php]
+Greeting.php
+```php
 <?php
 
 namespace DesignPatterns\PluggableSelector;

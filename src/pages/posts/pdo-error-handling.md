@@ -1,7 +1,8 @@
 ---
+layout: ../../layouts/PostLayout.astro
 title: "PDOのERRMODE_EXCEPTION無しのエラーハンドリング"
-tags: ["PHP"]
-date: "2020/08/11 00:00:00"
+tags: ["php"]
+date: 2020-08-11T00:00:00.001Z
 ---
 
 たまにPDOをERRMODE_EXCEPTIONを指定せずに使っていて、1つ処理をするたびにif文でエラーハンドリングをしているプログラムを見かけます。

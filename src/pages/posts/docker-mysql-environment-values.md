@@ -1,7 +1,8 @@
 ---
+layout: ../../layouts/PostLayout.astro
 title: "docker-composeのMySQLのイメージの環境変数"
-tags: ["Docker"]
-date: "2020/09/05 00:00:00"
+tags: ["docker"]
+date: 2020-09-05T00:00:00.001Z
 ---
 
 docker-composeでコンテナ内で環境変数を設定するには、docker-compose.ymlでenvironmentキーを使って指定します。
@@ -45,7 +46,8 @@ MYSQL_USERで設定したユーザのパスワードです。
 完成系のサンプルです。  
 （今試している対象のシステムがかなりレガシーなので、古めのMySQLのバージョンを指定しています）
 
-```yml[docker-compose.yml]
+docker-compose.yml
+```yaml
 version: '3'
 services:
  mysql:
@@ -57,7 +59,8 @@ services:
      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
 ```
 
-```yml[.env]
+.env
+```yaml
 MYSQL_ROOT_PASSWORD=adminpassword
 MYSQL_USER=testuser
 MYSQL_PASSWORD=testpassword

@@ -1,7 +1,8 @@
 ---
+layout: ../../layouts/PostLayout.astro
 title: 「より良いテストへの一歩　〜 そのテスト設計・計画、最適ですか？ 〜」に参加した
-tags: ["testing", "勉強会"]
-date: "2020/09/21 00:00:00"
+tags: ["testing", "study sessions"]
+date: 2020-09-21T00:00:00.001Z
 ---
 
 9/16にオンラインで開催されたVisionalさん主催の「<a href="https://d-cube.connpass.com/event/187308/" target="_blank">より良いテストへの一歩　〜 そのテスト設計・計画、最適ですか？ 〜</a>」の勉強会に参加してきました。(ビズリーチさんの会社の体系が変わって、Visionalの中のグループ会社になったらしい。知らなかった。)

@@ -1,7 +1,8 @@
 ---
+layout: ../../layouts/PostLayout.astro
 title: Go言語でEnumを表現する
 tags: ["go"]
-date: "2022/09/25 00:00:00"
+date: 2022-09-25T00:00:00.001Z
 ---
 
 GoでEnumってどう実装すればいいんだろう？と調べた時のメモ。

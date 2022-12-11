@@ -1,7 +1,8 @@
 ---
+layout: ../../layouts/PostLayout.astro
 title: REST APIで適切なHTTPステータスコードを返す
-tags: ["api"]
-date: "2022/10/08 00:00:00"
+tags: ["rest api"]
+date: 2022-10-08T00:00:00.001Z
 ---
 
 HTTPステータスコードは3桁の数字で表されており、最初の数字は分類を表しています。

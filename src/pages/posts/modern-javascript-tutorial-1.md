@@ -1,7 +1,8 @@
 ---
+layout: ../../layouts/PostLayout.astro
 title: The Modern JavaScript Tutorial 1
-tags: ["JavaScript"]
-date: "2022/06/12 00:00:00"
+tags: ["javascript"]
+date: 2022-06-12T00:00:00.001Z
 ---
 
 最近フロントエンドを改めてしっかりと勉強し直したいと思い、フロントエンドの<a href="https://roadmap.sh/frontend" target="_blank">ロードマップ</a>に沿って勉強をし直しています。

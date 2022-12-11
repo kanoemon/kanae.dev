@@ -1,7 +1,8 @@
 ---
+layout: ../../layouts/PostLayout.astro
 title: オープン・クローズドの原則(Open-Closed Principle)
 tags: ["プログラミング", "設計"]
-date: "2020/10/27 00:00:00"
+date: 2020-10-27T00:00:00.001Z
 ---
 
 オープン・クローズドの原則(Open-Closed Principle)。  
@@ -23,12 +24,14 @@ OCPは1988年にBertrand Meyerが生み出したとされている原則です�
 
 以下はOCPを違反している例です。
 
-```php[client.php]
+client.php
+```php
 // 機能呼び出し側
 $userService->charge('credit', $user);
 ```
 
-```php[UserService.php]
+UserService.php
+```php
 class UserService
 {
     public function charge($type, $user)
@@ -44,7 +47,8 @@ class UserService
 }
 ```
 
-```php[CreditCard.php]
+CreditCard.php
+```php
 class CreditCard
 {
   public function charge($user, $money)
@@ -65,11 +69,13 @@ class CreditCard
 
 これをOCPを守るようにリファクタリングします。
 
-```php[client.php]
+client.php
+```php
 $userService->charge(new CreditCard(), $user);
 ```
 
-```php[UserService.php]
+UserService.php
+```php
 class UserService
 {
     public function charge(AbstractWallet $wallet, $user)
@@ -79,7 +85,8 @@ class UserService
 }
 ```
 
-```php[CreditCard.php]
+CreditCard.php
+```php
 class CreditCard extends AbstractWallet
 {
   public function charge($user, $money)
@@ -88,7 +95,8 @@ class CreditCard extends AbstractWallet
 }
 ```
 
-```php[AbstractWallet.php]
+AbstractWallet.php
+```php
 abstract class AbstractWallet
 {
   abstract public function charge($user, $money);

@@ -1,7 +1,8 @@
 ---
+layout: ../../layouts/PostLayout.astro
 title: インタラクションテストとステートテスト
 tags: ["testing"]
-date: "2022/08/20 00:00:00"
+date: 2022-08-20T00:00:00.001Z
 ---
 
 <a href="https://www.oreilly.co.jp/books/9784873119656/" target="_blank">Googleのソフトウェアエンジニアリング</a>を読んでいく中で、インタラクションテストとステートテストという2つのテストのタイプが出てきました。  

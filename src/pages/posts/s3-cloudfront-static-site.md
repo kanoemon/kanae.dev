@@ -1,7 +1,8 @@
 ---
+layout: ../../layouts/PostLayout.astro
 title: S3とCloudFrontで静的Webサイトをつくる
-tags: ["AWS"]
-date: "2020/02/16 00:00:00"
+tags: ["aws"]
+date: 2020-02-16T00:00:00.001Z
 ---
 
 S3でホストされている静的WebサイトにCloudFrontをかませる方法です。AWSクラウドデザインパターンのCache Distributionパターンにあたるサーバ構成です。

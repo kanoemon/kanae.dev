@@ -1,7 +1,8 @@
 ---
+layout: ../../layouts/PostLayout.astro
 title: Rubyのキーワード引数
-tags: ["Ruby"]
-date: "2020/10/11 00:00:00"
+tags: ["ruby"]
+date: 2020-10-11T00:00:00.001Z
 ---
 
 ```ruby

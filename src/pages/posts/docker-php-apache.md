@@ -1,7 +1,8 @@
 ---
+layout: ../../layouts/PostLayout.astro
 title: DockerでPHP+Apacheの環境を構築する
-tags: ["Docker"]
-date: "2021/05/05 00:00:00"
+tags: ["docker"]
+date: 2021-05-05T00:00:00.001Z
 ---
 
 仕事で本格的にDockerを触ることになりそうなので、Dockerを勉強しています。  

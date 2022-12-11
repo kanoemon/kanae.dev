@@ -1,7 +1,8 @@
 ---
+layout: ../../layouts/PostLayout.astro
 title: 単一責任の原則(SRP)
 tags: ["プログラミング", "設計"]
-date: "2020/10/14 00:00:00"
+date: 2020-10-14T00:00:00.001Z
 ---
 
 SOLID原則のひとつ、単一責任の原則。  

@@ -1,7 +1,8 @@
 ---
+layout: ../../layouts/PostLayout.astro
 title: EC2でRuby on Railsアプリケーションの環境を構築する
-tags: ["Ruby", "Rails", "EC2"]
-date: "2021/08/28 00:00:00"
+tags: ["ruby", "rails", "ec2"]
+date: 2021-08-28T00:00:00.001Z
 ---
 
 EC2にRuby on Railsのアプリケーションの環境を構築します。  
@@ -125,7 +126,8 @@ pumaとnginxの連携はunixドメインソケットを使います。
 まずアプリケーションコードのpumaの設定ファイルを変更します。  
 デフォルトだとポート番号でlistenする設定になっているので、その設定をコメントアウトしてpumaで作成されるソケットファイルのパスを設定します。
 
-```ruby[config/puma.rb]
+config/puma.rb
+```ruby
 # port        ENV.fetch("PORT") { 3000 }
 bind "unix://#{Rails.root}/tmp/sockets/puma.sock"
 ```
@@ -136,7 +138,8 @@ nginxのconfファイルを作成し、config/puma.rbで指定したソケット
 $ sudo vim /etc/nginx/conf.d/sandbox-rails.conf
 ```
 
-```[sandbox-rails.conf]
+sandbox-rails.conf
+```nginx
 upstream sandbox-rails {
     # UNIXドメインソケットの設定
     # 今回は/var/www配下にアプリケーションコードを設置します

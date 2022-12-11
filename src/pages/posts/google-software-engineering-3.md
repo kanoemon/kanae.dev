@@ -1,7 +1,8 @@
 ---
+layout: ../../layouts/PostLayout.astro
 title: 「Googleのソフトウェアエンジニアリング」を読んだ(後編)
 tags: ["book", "engineering"]
-date: "2022/10/29 00:00:00"
+date: 2022-10-29T00:00:00.001Z
 ---
 
 「<a href="https://af.moshimo.com/af/c/click?a_id=3489058&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4873119650" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">Googleのソフトウェアエンジニアリング ―持続可能なプログラミングを支える技術、文化、プロセス</a>」の読書メモの中編です。第16章〜最後の25章まで。  

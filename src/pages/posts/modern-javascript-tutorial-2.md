@@ -1,8 +1,8 @@
 ---
+layout: ../../layouts/PostLayout.astro
 title: The Modern JavaScript Tutorial 2
-img: modern-javascript-tutorial-2.png
-tags: ["JavaScript"]
-date: "2022/06/21 00:00:00"
+tags: ["javascript"]
+date: 2022-06-21T00:00:00.001Z
 ---
 
 <a href="https://kanoe.dev/blog/modern-javascript-tutorial-1">The Modern JavaScript Tutorial 1</a>の続きから。
