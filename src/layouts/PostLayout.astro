@@ -45,22 +45,22 @@ allPosts.forEach((post, index) => {
 			<footer>
 				<nav class="flex mt-16 gap-4 mb-4">
 					{posts.prev.url ? 
-					<div class="flex flex-col border border-solid border-gray-700 rounded-md p-1 flex-1">
-						<span class="opacity-60 pb-5">previous</span>
+					<div class="flex flex-col rounded-md py-2 px-4 flex-1 bg-gray-100 text-sm">
+						<span class="opacity-60 pb-3">previous</span>
 						<a href={posts.prev.url}>{posts.prev.frontmatter.title}</a>
 					</div>
 					: null }
 					{posts.next.url ? 
-					<div class="flex flex-col border border-solid border-gray-700 rounded-md p-1 flex-1">
-						<span class="opacity-60 pb-5">next</span>
+					<div class="flex flex-col rounded-md py-2 px-4 flex-1 bg-gray-100 text-sm">
+						<span class="opacity-60 pb-3">next</span>
 						<a href={posts.next.url}>{posts.next.frontmatter.title}</a>
 					</div>
 					: null }
 				</nav>
 				<div>
 					{frontmatter.tags.map((tag: any) => (
-						<span class="text-sm">
-							<a href={`/tags/${tag}`} class="py-1 px-2 border-solid border border-gray-700 rounded-md">{tag}</a>
+						<span class="text-xs">
+							<a href={`/tags/${tag}`} class="py-1 px-3 rounded-full bg-gray-100">{tag}</a>
 						</span>
 					))}
 				</div>
@@ -71,23 +71,23 @@ allPosts.forEach((post, index) => {
 
 <style is:global>
 	h2, h3 {
-		@apply mt-16;
+		@apply mt-6 mb-2.5;
 	}
 
 	h2 {
-		@apply text-3xl;
+		@apply text-xl text-rose-800;
 	}
 
 	h3 {
-		@apply text-2xl;
+		@apply text-lg text-[#df81a8];
 	}
 
 	p {
-		@apply mt-9;
+		@apply my-5;
 	}
 
 	section a {
-		@apply underline;
+		@apply pb-1 no-underline text-rose-800 border-b-2 border-rose-300 border-dashed;
 	}
 
 	ul, ol, pre {
@@ -96,6 +96,10 @@ allPosts.forEach((post, index) => {
 
 	pre {
 		@apply p-4;
+	}
+
+	article section {
+		@apply leading-relaxed;
 	}
 
 	article ul, ol {
