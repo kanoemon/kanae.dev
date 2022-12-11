@@ -1,7 +1,35 @@
 ---
 import Layout from './Layout.astro';
 
+const allPosts = await Astro.glob('../pages/posts/*.md');
+allPosts.sort((a, b) => Date.parse(b.frontmatter.date) - Date.parse(a.frontmatter.date));
+
 const { frontmatter } = Astro.props;
+
+interface PaginationPosts {
+	next: object;
+	current: object;
+	prev: object;
+}
+
+let posts: PaginationPosts = {
+	next: {},
+	current: {},
+	prev: {},
+};
+
+allPosts.forEach((post, index) => {
+	if (post.frontmatter.title == frontmatter.title) {
+		if (allPosts[index + 1]) {
+			posts.next = allPosts[index + 1];
+		}
+		if (allPosts[index - 1]) {
+			posts.prev = allPosts[index - 1];
+		}
+		posts.current = allPosts[index];
+	}
+});
+
 ---
 
 <Layout title={frontmatter.title}>
@@ -14,7 +42,21 @@ const { frontmatter } = Astro.props;
 			<section class="pt-12">
 				<slot />
 			</section>
-			<footer class="mt-16">
+			<footer>
+				<nav class="flex mt-16 gap-4 mb-4">
+					{posts.prev.url ? 
+					<div class="flex flex-col border border-solid border-gray-700 rounded-md p-1 flex-1">
+						<span class="opacity-60 pb-5">previous</span>
+						<a href={posts.prev.url}>{posts.prev.frontmatter.title}</a>
+					</div>
+					: null }
+					{posts.next.url ? 
+					<div class="flex flex-col border border-solid border-gray-700 rounded-md p-1 flex-1">
+						<span class="opacity-60 pb-5">next</span>
+						<a href={posts.next.url}>{posts.next.frontmatter.title}</a>
+					</div>
+					: null }
+				</nav>
 				<div>
 					{frontmatter.tags.map((tag: any) => (
 						<span class="text-sm">
