@@ -86,6 +86,10 @@ allPosts.forEach((post, index) => {
 		@apply my-5 pl-7;
 	}
 
+	section :global(ul ul) {
+		@apply my-2 pl-7;
+	}
+
 	section :global(ul li) {
 		@apply list-disc my-2;
 	}
@@ -100,5 +104,28 @@ allPosts.forEach((post, index) => {
 
 	section :global(pre) {
 		@apply p-4 my-2;
+	}
+
+	section :global(table) {
+		@apply text-sm my-8;
+	}
+
+	section :global(thead) {
+		@apply border-b border-gray-300;
+	}
+
+	section :global(tr) {
+		@apply border-b border-gray-200;
+	}
+
+	section :global(td) {
+		@apply p-2;
+	}
+
+	table{width:100%;table-layout:auto;text-align:left;margin-top:2em;margin-bottom:2em;font-size:.875em;line-height:1.7142857}
+	.prose thead{color:#111827;font-weight:600;border-bottom-width:1px;border-bottom-color:#d1d5db}.prose thead th{vertical-align:bottom;padding-right:.5714286em;padding-bottom:.5714286em;padding-left:.5714286em}.prose tbody tr{border-bottom-width:1px;border-bottom-color:#e5e7eb}.prose tbody tr:last-child{border-bottom-width:0}.prose tbody td{vertical-align:top;padding:.5714286em}
+
+	section :global(section) {
+		@apply mt-10 text-sm;
 	}
 </style>
