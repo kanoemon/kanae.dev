@@ -21,10 +21,10 @@ let posts: PaginationPosts = {
 allPosts.forEach((post, index) => {
 	if (post.frontmatter.title == frontmatter.title) {
 		if (allPosts[index + 1]) {
-			posts.next = allPosts[index + 1];
+			posts.prev = allPosts[index + 1];
 		}
 		if (allPosts[index - 1]) {
-			posts.prev = allPosts[index - 1];
+			posts.next = allPosts[index - 1];
 		}
 		posts.current = allPosts[index];
 	}
