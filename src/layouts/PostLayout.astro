@@ -33,17 +33,26 @@ allPosts.forEach((post, index) => {
 ---
 
 <Layout title={frontmatter.title}>
-	<main class="container mx-auto max-w-3xl p-16">
+	<main class="container mx-auto max-w-3xl">
 		<article>
-			<header class="my-6">
-				<h1 class="text-4xl mb-1">{frontmatter.title}</h1>
-				<time class="text-sm">{new Date(frontmatter.date).toLocaleDateString()}</time>
+			<header class="my-5">
+				<h1 class="text-3xl mb-1">{frontmatter.title}</h1>
+				<div class="flex">
+					<time class="text-sm text-gray-400">{new Date(frontmatter.date).toLocaleDateString()}</time>
+				</div>
 			</header>
-			<section class="pt-12">
+			<section>
 				<slot />
 			</section>
-			<footer>
-				<nav class="flex mt-16 gap-4 mb-4">
+			<footer class="mt-5 border-t">
+				<div class="py-4">
+					{frontmatter.tags.map((tag: any) => (
+						<span class="text-xs">
+							<a href={`/tags/${tag}`} class="py-1 px-3 rounded-full bg-gray-100">{tag}</a>
+						</span>
+					))}
+				</div>
+				<nav class="flex my-4 gap-4">
 					{posts.prev.url ? 
 					<div class="flex flex-col rounded-md py-2 px-4 flex-1 bg-gray-100 text-sm">
 						<span class="opacity-60 pb-3">previous</span>
@@ -57,13 +66,6 @@ allPosts.forEach((post, index) => {
 					</div>
 					: null }
 				</nav>
-				<div>
-					{frontmatter.tags.map((tag: any) => (
-						<span class="text-xs">
-							<a href={`/tags/${tag}`} class="py-1 px-3 rounded-full bg-gray-100">{tag}</a>
-						</span>
-					))}
-				</div>
 			</footer>
 		</article>
 	</main>
@@ -71,43 +73,31 @@ allPosts.forEach((post, index) => {
 
 <style>
 	section :global(h2) {
-		@apply text-xl text-rose-800 mt-8 mb-2.5;
+		@apply text-xl text-rose-800 my-3;
 	}
 
 	section :global(h3) {
-		@apply text-lg text-rose-800 mt-8 mb-2.5;
+		@apply text-lg text-rose-800 my-3.5;
 	}
 
 	section :global(h4) {
-		@apply text-lg mt-8 mb-2.5 font-semibold;
+		@apply text-base my-4 font-semibold;
 	}
 
 	section :global(p) {
-		@apply my-5 leading-relaxed;
+		@apply my-4 leading-relaxed;
 	}
 
 	section :global(a) {
-		@apply pb-1 no-underline text-rose-800 border-b-2 border-rose-300 border-dashed;
+		@apply text-rose-700;
 	}
 
 	section :global(ul) {
-		@apply my-5 pl-7;
-	}
-
-	section :global(ul ul) {
-		@apply my-2 pl-7;
-	}
-
-	section :global(ul li) {
-		@apply list-disc my-2;
+		@apply my-4 pl-6 list-disc;
 	}
 
 	section :global(ol) {
-		@apply my-5 pl-7;
-	}
-
-	section :global(ol li) {
-		@apply list-decimal my-2;
+		@apply my-4 pl-6 list-decimal;
 	}
 
 	section :global(pre) {
@@ -134,6 +124,6 @@ allPosts.forEach((post, index) => {
 	.prose thead{color:#111827;font-weight:600;border-bottom-width:1px;border-bottom-color:#d1d5db}.prose thead th{vertical-align:bottom;padding-right:.5714286em;padding-bottom:.5714286em;padding-left:.5714286em}.prose tbody tr{border-bottom-width:1px;border-bottom-color:#e5e7eb}.prose tbody tr:last-child{border-bottom-width:0}.prose tbody td{vertical-align:top;padding:.5714286em}
 
 	section :global(section) {
-		@apply mt-10 text-sm;
+		@apply border-t border-dashed mt-10 text-xs;
 	}
 </style>
