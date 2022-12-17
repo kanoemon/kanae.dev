@@ -2,54 +2,24 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Welcome to Astro.">
-    <a href="/">Home</a>
-    <a href="/about/">About</a>
+<Layout title="About - kanoe.dev">
+    <main class="container mx-auto max-w-3xl">
+        <p>
+            都内のIT企業でWebエンジニアをやっています。<br>
+            言語ではPHPが一番長く、他にRuby、Goを使って開発をしています。バックエンドの開発がメインですが、最近はフロントエンドの開発もしています。<br>
+            AWSに乗っかっているサービスの運用、保守も行っているため、一通りのAWSの機能も触れます。<br>
+            最近は開発以外で、テックリードで複数プロダクトの担当をしており、スクラムチームの牽引や運用体制の構築、メンバーの技術サポートの業務を行っています。<br>
+            サービスを届けた側も、作る側も、どちらも幸せになるシステム作りをモットーに日々仕事をしています。
+        </p>
+    
+        <p>
+            このブログでは主にプログラミングやインフラで試してみたこと、読んでみた本のこと等を書いています。<br>
+            何かありましたら各種SNSからお気軽にご連絡頂ければと思います。
+        </p>
 
-    <h1>About Me</h1>
+        <ul class="list-disc pl-10">
+            <li class="tw-ml-6"><a href="https://twitter.com/kanoe" target="_blank" class="text-rose-800">Twitter</a></li>
+            <li class="tw-ml-6"><a href="https://github.com/kanoemon" target="_blank" class="text-rose-800">Github</a></li>
+        </ul>
+    </main>
 </Layout>
-
-<style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
-	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		border: 1px solid rgba(var(--accent), 25%);
-		background-color: white;
-		padding: 1rem;
-		border-radius: 0.4rem;
-	}
-	.instructions code {
-		font-size: 0.875em;
-		font-weight: bold;
-		background: rgba(var(--accent), 12%);
-		color: rgb(var(--accent));
-		border-radius: 4px;
-		padding: 0.3em 0.45em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
-</style>
