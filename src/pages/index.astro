@@ -15,12 +15,16 @@ allPosts.sort((a, b) => Date.parse(b.frontmatter.date) - Date.parse(a.frontmatte
 					</a>
 				</h1>
 				<div class="flex">
-                    <time class="text-sm text-gray-400">{post.frontmatter.date}</time>
-					<div class="text-sm text-gray-400">
-                        {post.frontmatter.tags.map((tag: any) => (
-                            <span class="before:content-['・']"><a href={`/tags/${tag}`}>{tag}</a></span>
-                        ))}
-					</div>
+                    <time class="text-sm text-gray-400">
+						{new Date(post.frontmatter.date).toLocaleDateString()}
+					</time>
+				</div>
+				<div>
+					{post.frontmatter.tags.map((tag: any) => (
+						<span class="text-xs inline-block mr-1 my-3">
+						<a href={`/tags/${tag}`} class="py-1 px-3 rounded-full bg-gray-100">{tag}</a>
+						</span>
+					))}
 				</div>
 			</article>
         )}
