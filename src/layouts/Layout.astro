@@ -19,6 +19,15 @@ const { title } = Astro.props;
 		<title>{title}</title>
 		<script src="https://kit.fontawesome.com/86ced1b7f3.js" crossorigin="anonymous"></script>
 	</head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-FWCYZJQN2G"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-FWCYZJQN2G');
+	</script>
 	<body>
 		<Header />
 		<slot />
