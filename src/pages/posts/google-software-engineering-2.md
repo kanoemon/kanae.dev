@@ -5,21 +5,8 @@ tags: ["book", "testing", "engineering"]
 date: 2022-10-22T00:00:00.001Z
 ---
 
-「<a href="https://af.moshimo.com/af/c/click?a_id=3489058&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4873119650" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">Googleのソフトウェアエンジニアリング ―持続可能なプログラミングを支える技術、文化、プロセス</a>」の読書メモの中編です。第11章〜15章まで。  
+「Googleのソフトウェアエンジニアリング ―持続可能なプログラミングを支える技術、文化、プロセス」の読書メモの中編です。第11章〜15章まで。  
 第1章〜10章までの読書メモは<a href="https://kanoe.dev/blog/google-software-engineering" target="_blank">こちら</a>。
-<img src="//i.moshimo.com/af/i/impression?a_id=3489058&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />   
-
-<div class="amazon-box">
-<div>
-<a href="https://af.moshimo.com/af/c/click?a_id=3489058&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4873119650" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank"><img src="https://images-fe.ssl-images-amazon.com/images/I/4113eD01v2L._SL160_.jpg" alt="" style="border: none;" /></a>
-</div>
-<div>
-<a href="https://af.moshimo.com/af/c/click?a_id=3489058&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4873119650" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">Googleのソフトウェアエンジニアリング ―持続可能なプログラミングを支える技術、文化、プロセス</a><br>
-竹辺 靖昭 (監修), Titus Winters (編集), Tom Manshreck (編集), Hyrum Wright (編集), 久富木 隆一  (翻訳)<br>
-オライリージャパン
-</div>
-</div>
-<img src="//i.moshimo.com/af/i/impression?a_id=3489058&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
 
 ## 11章 テスト概観
 ここでも「左への移動」の話が出てきている。バグは早く見つけるほど修正のコストを低く抑えることができる。  
@@ -56,19 +43,8 @@ date: 2022-10-22T00:00:00.001Z
 システムは生きている限り継続的な保守のコストが発生する。そのシステムを廃止するか、保守のコストをかけ続けるかはコストを比較して判断していくべきである。  
 作るより無くすほうが難しいことは自分の経験上も感じている。その理由について本書ではHyrumの法則で説明されている。後は廃止することに対して会社から理解が得られなかったり、時間がもらえない場合は、<a href="https://kanoe.dev/blog/google-software-engineering" target="_blank">7章のエンジニアリングの生産性の計測</a>によって具体的なエビデンスを出して示す方法が紹介されている。
 
-<div class="amazon-box">
-<div>
-<a href="https://af.moshimo.com/af/c/click?a_id=3489058&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4873119650" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank"><img src="https://images-fe.ssl-images-amazon.com/images/I/4113eD01v2L._SL160_.jpg" alt="" style="border: none;" /></a>
-</div>
-<div>
-<a href="https://af.moshimo.com/af/c/click?a_id=3489058&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4873119650" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">Googleのソフトウェアエンジニアリング ―持続可能なプログラミングを支える技術、文化、プロセス</a><br>
-竹辺 靖昭 (監修), Titus Winters (編集), Tom Manshreck (編集), Hyrum Wright (編集), 久富木 隆一  (翻訳)<br>
-オライリージャパン
-</div>
-</div>
-<img src="//i.moshimo.com/af/i/impression?a_id=3489058&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
 
-「<a href="https://af.moshimo.com/af/c/click?a_id=3489058&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4873119650" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">Googleのソフトウェアエンジニアリング ―持続可能なプログラミングを支える技術、文化、プロセス</a>」の他の章の読書メモは以下から。
+「Googleのソフトウェアエンジニアリング ―持続可能なプログラミングを支える技術、文化、プロセス」の他の章の読書メモは以下から。
 - <a href="https://kanoe.dev/blog/google-software-engineering" target="_blank">「Googleのソフトウェアエンジニアリング」を読んだ(前編)</a>
 - <a href="https://kanoe.dev/blog/google-software-engineering-2" target="_blank">「Googleのソフトウェアエンジニアリング」を読んだ(中編)</a>
 - <a href="https://kanoe.dev/blog/google-software-engineering-3" target="_blank">「Googleのソフトウェアエンジニアリング」を読んだ(後編)</a>

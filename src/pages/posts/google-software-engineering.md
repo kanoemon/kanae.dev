@@ -5,21 +5,8 @@ tags: ["book", "management", "documentation", "code review", "engineering"]
 date: 2022-10-05T00:00:00.001Z
 ---
 
-「<a href="https://af.moshimo.com/af/c/click?a_id=3489058&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4873119650" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">Googleのソフトウェアエンジニアリング ―持続可能なプログラミングを支える技術、文化、プロセス</a>」を読んだ。なかなかボリュームがある本だったが、自分の仕事に直結する話も多く、とても刺激になった。  
+「Googleのソフトウェアエンジニアリング ―持続可能なプログラミングを支える技術、文化、プロセス」を読んだ。なかなかボリュームがある本だったが、自分の仕事に直結する話も多く、とても刺激になった。  
 前・中・後編と分けて読書メモをまとめていこうと思う。今回は前編で第1章〜10章まで。
-<img src="//i.moshimo.com/af/i/impression?a_id=3489058&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
-
-<div class="amazon-box">
-<div>
-<a href="https://af.moshimo.com/af/c/click?a_id=3489058&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4873119650" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank"><img src="https://images-fe.ssl-images-amazon.com/images/I/4113eD01v2L._SL160_.jpg" alt="" style="border: none;" /></a>
-</div>
-<div>
-<a href="https://af.moshimo.com/af/c/click?a_id=3489058&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4873119650" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">Googleのソフトウェアエンジニアリング ―持続可能なプログラミングを支える技術、文化、プロセス</a><br>
-竹辺 靖昭 (監修), Titus Winters (編集), Tom Manshreck (編集), Hyrum Wright (編集), 久富木 隆一  (翻訳)<br>
-オライリージャパン
-</div>
-</div>
-<img src="//i.moshimo.com/af/i/impression?a_id=3489058&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
 
 ## 1章 ソフトウェアエンジニアリングとは何か
 まずはプログラミングとソフトウェアエンジニアリングの違いの話から始まる。プログラミングとはコードを生産する即時的な行動であり、ソフトウェアエンジニアリングはそのコードが利用されなければいけない期間中に保守するために必要なポリシー、プラクティス、ツールのセットである。
@@ -78,19 +65,7 @@ date: 2022-10-05T00:00:00.001Z
 
 印象深かったのはドキュメンテーションもコードのようなものであるという言葉である。ドキュメンテーションを書くことを開発で必要なタスクの一つとして扱うと良い。
 
-<div class="amazon-box">
-<div>
-<a href="https://af.moshimo.com/af/c/click?a_id=3489058&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4873119650" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank"><img src="https://images-fe.ssl-images-amazon.com/images/I/4113eD01v2L._SL160_.jpg" alt="" style="border: none;" /></a>
-</div>
-<div>
-<a href="https://af.moshimo.com/af/c/click?a_id=3489058&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4873119650" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">Googleのソフトウェアエンジニアリング ―持続可能なプログラミングを支える技術、文化、プロセス</a><br>
-竹辺 靖昭 (監修), Titus Winters (編集), Tom Manshreck (編集), Hyrum Wright (編集), 久富木 隆一  (翻訳)<br>
-オライリージャパン
-</div>
-</div>
-<img src="//i.moshimo.com/af/i/impression?a_id=3489058&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
-
-「<a href="https://af.moshimo.com/af/c/click?a_id=3489058&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4873119650" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">Googleのソフトウェアエンジニアリング ―持続可能なプログラミングを支える技術、文化、プロセス</a>」の他の章の読書メモは以下から。
+「Googleのソフトウェアエンジニアリング ―持続可能なプログラミングを支える技術、文化、プロセス」の他の章の読書メモは以下から。
 - <a href="https://kanoe.dev/blog/google-software-engineering" target="_blank">「Googleのソフトウェアエンジニアリング」を読んだ(前編)</a>
 - <a href="https://kanoe.dev/blog/google-software-engineering-2" target="_blank">「Googleのソフトウェアエンジニアリング」を読んだ(中編)</a>
 - <a href="https://kanoe.dev/blog/google-software-engineering-3" target="_blank">「Googleのソフトウェアエンジニアリング」を読んだ(後編)</a>

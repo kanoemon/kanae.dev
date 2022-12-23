@@ -5,22 +5,10 @@ tags: ["book", "engineering"]
 date: 2022-10-29T00:00:00.001Z
 ---
 
-「<a href="https://af.moshimo.com/af/c/click?a_id=3489058&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4873119650" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">Googleのソフトウェアエンジニアリング ―持続可能なプログラミングを支える技術、文化、プロセス</a>」の読書メモの中編です。第16章〜最後の25章まで。  
+「Googleのソフトウェアエンジニアリング ―持続可能なプログラミングを支える技術、文化、プロセス」の読書メモの中編です。第16章〜最後の25章まで。  
 第1章〜10章までの読書メモは<a href="https://kanoe.dev/blog/google-software-engineering" target="_blank">こちら</a>。  
 第11章〜15章までの読書メモは<a href="https://kanoe.dev/blog/google-software-engineering-2" target="_blank">こちら</a>。  
-<img src="//i.moshimo.com/af/i/impression?a_id=3489058&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />   
 
-<div class="amazon-box">
-<div>
-<a href="https://af.moshimo.com/af/c/click?a_id=3489058&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4873119650" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank"><img src="https://images-fe.ssl-images-amazon.com/images/I/4113eD01v2L._SL160_.jpg" alt="" style="border: none;" /></a>
-</div>
-<div>
-<a href="https://af.moshimo.com/af/c/click?a_id=3489058&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4873119650" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">Googleのソフトウェアエンジニアリング ―持続可能なプログラミングを支える技術、文化、プロセス</a><br>
-竹辺 靖昭 (監修), Titus Winters (編集), Tom Manshreck (編集), Hyrum Wright (編集), 久富木 隆一  (翻訳)<br>
-オライリージャパン
-</div>
-</div>
-<img src="//i.moshimo.com/af/i/impression?a_id=3489058&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
 
 ## 16章 バージョンコントロールとブランチ管理
 バージョンコントロールはコードと時間の相互作用を管理するためのものである。そのコードがどの時点でどの状態だったのかを管理してくれる。
@@ -80,19 +68,8 @@ CIのゴールは問題のあるコードの変更をできるだけ早く自動
 組織がスケールしていくと管理するアプリケーションが増え、アプリケーションのサイズが増え、アプリケーションの実行が必要なコピー数が増えていく。スケールしていくためにはこれらに対処できるように自動化が必須となる。 それを実現する共通のインフラストラクチャーがあると組織のスケールにも対処しやすくなっていく。  
 スケールに対応してくためには、どのシステムでも必要になってくる作業をうまく共通化することが重要になっていくことを改めて感じた。
 
-<div class="amazon-box">
-<div>
-<a href="https://af.moshimo.com/af/c/click?a_id=3489058&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4873119650" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank"><img src="https://images-fe.ssl-images-amazon.com/images/I/4113eD01v2L._SL160_.jpg" alt="" style="border: none;" /></a>
-</div>
-<div>
-<a href="https://af.moshimo.com/af/c/click?a_id=3489058&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4873119650" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">Googleのソフトウェアエンジニアリング ―持続可能なプログラミングを支える技術、文化、プロセス</a><br>
-竹辺 靖昭 (監修), Titus Winters (編集), Tom Manshreck (編集), Hyrum Wright (編集), 久富木 隆一  (翻訳)<br>
-オライリージャパン
-</div>
-</div>
-<img src="//i.moshimo.com/af/i/impression?a_id=3489058&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
 
-「<a href="https://af.moshimo.com/af/c/click?a_id=3489058&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4873119650" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">Googleのソフトウェアエンジニアリング ―持続可能なプログラミングを支える技術、文化、プロセス</a>」の他の章の読書メモは以下から。
+「Googleのソフトウェアエンジニアリング ―持続可能なプログラミングを支える技術、文化、プロセス」の他の章の読書メモは以下から。
 - <a href="https://kanoe.dev/blog/google-software-engineering" target="_blank">「Googleのソフトウェアエンジニアリング」を読んだ(前編)</a>
 - <a href="https://kanoe.dev/blog/google-software-engineering-2" target="_blank">「Googleのソフトウェアエンジニアリング」を読んだ(中編)</a>
 - <a href="https://kanoe.dev/blog/google-software-engineering-3" target="_blank">「Googleのソフトウェアエンジニアリング」を読んだ(後編)</a>

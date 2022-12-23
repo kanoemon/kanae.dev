@@ -65,5 +65,4 @@ Webサイトの場合は該当のページが移動した場合に別のペー�
 
 ## 参考
 - <a href="https://datatracker.ietf.org/doc/html/rfc7231" target="_blank">RFC 7231</a>
-- <a href="https://af.moshimo.com/af/c/click?a_id=3489058&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4873116864" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">Web API: The Good Parts</a><img src="//i.moshimo.com/af/i/impression?a_id=3489058&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
-
+- Web API: The Good Parts
