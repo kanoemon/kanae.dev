@@ -6,29 +6,27 @@ allPosts.sort((a, b) => Date.parse(b.frontmatter.date) - Date.parse(a.frontmatte
 ---
 
 <Layout title="kanae.dev">
-    <main class="container mx-auto max-w-3xl">
-        {allPosts.map((post) => 
-			<article class="py-6">
-				<h1 class="my-1 text-2xl">
-					<a href={post.url}>
-						{post.frontmatter.title}
-					</a>
-				</h1>
-				<div class="flex">
-                    <time class="text-sm text-gray-400">
-						{new Date(post.frontmatter.date).toLocaleDateString()}
-					</time>
-				</div>
-				<div>
-					{post.frontmatter.tags.map((tag: any) => (
-						<span class="text-xs inline-block mr-1 my-3">
-						<a href={`/tags/${tag}`} class="py-1 px-3 rounded-full bg-gray-100">{tag}</a>
-						</span>
-					))}
-				</div>
-			</article>
-        )}
-	</main>
+	{allPosts.map((post) => 
+		<article class="py-6">
+			<h1 class="my-1 text-2xl">
+				<a href={post.url}>
+					{post.frontmatter.title}
+				</a>
+			</h1>
+			<div class="flex">
+				<time class="text-sm text-gray-400">
+					{new Date(post.frontmatter.date).toLocaleDateString()}
+				</time>
+			</div>
+			<div>
+				{post.frontmatter.tags.map((tag: any) => (
+					<span class="text-xs inline-block mr-1 my-3">
+					<a href={`/tags/${tag}`} class="py-1 px-3 rounded-full bg-gray-100">{tag}</a>
+					</span>
+				))}
+			</div>
+		</article>
+	)}
 </Layout>
 
 <style>

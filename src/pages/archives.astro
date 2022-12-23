@@ -11,23 +11,21 @@ for(let i = new Date().getFullYear(); i >= 2020; i--) {
 ---
 
 <Layout title="kanae.dev - Archives">
-    <main class="container mx-auto max-w-3xl">
-        {years.map((year) => (
-            <section class="mb-4">
-                <h1 class="text-2xl my-4">{year}</h1>
-                <ul>
-                {allPosts
-                    .filter((post) => new Date(post.frontmatter.date).getFullYear() == year)
-                    .map((post) => (
-                        <li class="py-1">
-                            <time class="text-gray-500">{new Date(post.frontmatter.date).toLocaleDateString()}</time>
-                            <a href={post.url} class="text-cyan-600">
-                                {post.frontmatter.title}
-                            </a>
-                        </li>
-                    ))}
-                </ul>
-            </section>
-        ))}
-    </main>
+    {years.map((year) => (
+        <section class="mb-4">
+            <h1 class="text-2xl my-4">{year}</h1>
+            <ul>
+            {allPosts
+                .filter((post) => new Date(post.frontmatter.date).getFullYear() == year)
+                .map((post) => (
+                    <li class="py-1">
+                        <time class="text-gray-500">{new Date(post.frontmatter.date).toLocaleDateString()}</time>
+                        <a href={post.url} class="text-cyan-600">
+                            {post.frontmatter.title}
+                        </a>
+                    </li>
+                ))}
+            </ul>
+        </section>
+    ))}
 </Layout>
