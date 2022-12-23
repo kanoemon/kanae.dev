@@ -33,10 +33,10 @@ allPosts.forEach((post, index) => {
 ---
 
 <Layout title={frontmatter.title}>
-	<main class="container mx-auto max-w-3xl">
+	<main class="container mx-auto px-5 lg:px-0 lg:max-w-3xl">
 		<article>
 			<header class="my-5">
-				<h1 class="text-3xl mb-1">{frontmatter.title}</h1>
+				<h1 class="text-xl lg:text-3xl mb-1">{frontmatter.title}</h1>
 				<div class="flex">
 					<time class="text-sm text-gray-400">{new Date(frontmatter.date).toLocaleDateString()}</time>
 				</div>
