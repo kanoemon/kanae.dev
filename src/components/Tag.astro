@@ -1,0 +1,7 @@
+---
+const {tag} = Astro.props;
+---
+
+<span class="text-xs inline-block mx-1 my-3">
+    <a href={`/tags/${tag}`} class="py-1 px-3 rounded-full bg-gray-100">{tag}</a>
+</span>
