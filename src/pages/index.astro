@@ -6,7 +6,7 @@ const allPosts = await Astro.glob('../pages/posts/*.md');
 allPosts.sort((a, b) => Date.parse(b.frontmatter.date) - Date.parse(a.frontmatter.date));
 ---
 
-<Layout title="kanae.dev">
+<Layout title="kanae.dev" type="website">
 	{allPosts.map((post) => 
 		<article class="py-6">
 			<h1 class="my-1 text-2xl">
