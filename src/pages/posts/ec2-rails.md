@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/PostLayout.astro
 title: EC2でRuby on Railsアプリケーションの環境を構築する
-tags: ["ruby", "rails", "ec2"]
+tags: ["ruby", "rails", "aws"]
 date: 2021-08-28T00:00:00.001Z
 ---
 

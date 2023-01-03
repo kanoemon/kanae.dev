@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/PostLayout.astro
 title: オブジェクトを作るメソッド Factory Methodパターン
-tags: ["design patterns"]
+tags: ["design-patterns"]
 date: 2020-10-16T00:00:00.001Z
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/PostLayout.astro
 title: 「Googleのソフトウェアエンジニアリング」を読んだ(中編)
-tags: ["book", "testing", "engineering"]
+tags: ["books", "testing", "software-engineering"]
 date: 2022-10-22T00:00:00.001Z
 ---
 

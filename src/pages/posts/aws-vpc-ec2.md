@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/PostLayout.astro
 title: VPCの作成とインターネットからアクセスできるEC2インスタンスの構築
-tags: ["aws", "vpc", "ec2"]
+tags: ["aws"]
 date: 2021-08-14T00:00:00.001Z
 ---
 

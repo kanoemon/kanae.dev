@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/PostLayout.astro
 title: 使い方注意なPluggable Selectorパターン
-tags: ["php", "design patterns"]
+tags: ["php", "design-patterns"]
 date: 2020-10-03T00:00:00.001Z
 ---
 

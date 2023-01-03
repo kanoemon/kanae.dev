@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/PostLayout.astro
 title: GoFデザインパターンいつ使う？のまとめ
-tags: ["design patterns"]
+tags: ["design-patterns"]
 date: 2020-08-29T00:00:00.001Z
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/PostLayout.astro
 title: リスコフの置換原則(Liskov substitution principle)
-tags: ["プログラミング", "設計"]
+tags: ["solid", "clean-code"]
 date: 2020-10-29T00:00:00.001Z
 ---
 

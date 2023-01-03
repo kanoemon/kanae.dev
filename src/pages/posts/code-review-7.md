@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/PostLayout.astro
 title: コードレビューで使える7つの設計原理
-tags: ["code review"]
+tags: ["code-review"]
 date: 2020-07-05T00:00:00.001Z
 ---
 

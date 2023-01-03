@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/PostLayout.astro
 title: Value Objectを不変にする理由
-tags: ["design patterns", "ddd"]
+tags: ["clean-code", "ddd"]
 date: 2020-11-08T00:00:00.001Z
 ---
 

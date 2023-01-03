@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/PostLayout.astro
 title: npmパッケージを定期的に更新する仕組み
-tags: ["nodejs", "operation"]
+tags: ["nodejs", "operations"]
 date: 2022-09-10T00:00:00.001Z
 ---
 

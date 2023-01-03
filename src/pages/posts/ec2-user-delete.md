@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/PostLayout.astro
 title: EC2からec2-userを削除する
-tags: ["aws", "linux"]
+tags: ["aws"]
 date: 2020-12-13T00:00:00.001Z
 ---
 

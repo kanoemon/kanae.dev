@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/PostLayout.astro
 title: 「より良いテストへの一歩　〜 そのテスト設計・計画、最適ですか？ 〜」に参加した
-tags: ["testing", "study sessions"]
+tags: ["testing", "events"]
 date: 2020-09-21T00:00:00.001Z
 ---
 

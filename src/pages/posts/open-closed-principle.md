@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/PostLayout.astro
 title: オープン・クローズドの原則(Open-Closed Principle)
-tags: ["プログラミング", "設計"]
+tags: ["solid", "clean-code"]
 date: 2020-10-27T00:00:00.001Z
 ---
 

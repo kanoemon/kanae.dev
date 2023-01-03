@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/PostLayout.astro
 title: switch文について考える
-tags: ["プログラミング"]
+tags: ["clean-code"]
 date: 2020-11-03T00:00:00.001Z
 ---
 

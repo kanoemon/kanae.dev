@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/PostLayout.astro
 title: Goで値オブジェクトを実装する
-tags: ["go", "ddd"]
+tags: ["golang", "ddd"]
 date: 2022-11-03T00:00:00.001Z
 ---
 

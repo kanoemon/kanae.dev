@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/PostLayout.astro
 title: 「ドメイン駆動設計入門」を読みました
-tags: ["book", "ddd"]
+tags: ["books", "ddd"]
 date: 2020-05-31T00:00:00.001Z
 ---
 

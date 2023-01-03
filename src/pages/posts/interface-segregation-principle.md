@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/PostLayout.astro
 title: インタフェース分離の原則(Interface Segregation principle)
-tags: ["プログラミング", "設計"]
+tags: ["solid", "clean-code"]
 date: 2020-11-02T00:00:00.001Z
 ---
 

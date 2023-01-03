@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/PostLayout.astro
 title: Factory MethodパターンとAbstract Factoryパターン
-tags: ["design patterns"]
+tags: ["design-patterns"]
 date: 2020-11-15T00:00:00.001Z
 ---
 
