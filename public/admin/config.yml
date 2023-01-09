@@ -3,8 +3,8 @@ backend:
   repo: kanoemon/kanae.dev
   branch: master
 
-media_folder: 'public/assets/images/blog'
-public_folder: 'assets/images/blog'
+media_folder: 'public/assets/images/posts'
+public_folder: 'assets/images/posts'
 
 publish_mode: editorial_workflow
 

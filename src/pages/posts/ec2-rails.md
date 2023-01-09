@@ -202,4 +202,4 @@ $ bin/rails s
 
 ブラウザからアクセスし、以下画面が表示されれば無事起動完了です。
 
-![RailsのHello World](/assets/images/blog/rails-hello-world.png)
+![RailsのHello World](/assets/images/posts/rails-hello-world.png)

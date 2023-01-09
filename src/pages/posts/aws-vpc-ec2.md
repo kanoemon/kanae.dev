@@ -8,7 +8,7 @@ date: 2021-08-14T00:00:00.001Z
 VPCを作成してその中にEC2インスタンスを起動し、そのインスタンスにインターネット経由でアクセスできる環境を構築します。  
 ゴールは自分のPCからEC2インスタンスにSSHできること。
 
-![ネットワーク図](/assets/images/blog/aws-vpc-ec2-network.png)
+![ネットワーク図](/assets/images/posts/aws-vpc-ec2-network.png)
 
 必要な作業は以下です。
 
@@ -43,11 +43,11 @@ VPC IDのカラムに先ほど作成したVPCのIDと名前が確認できます
 明示的なサブネットの関連付けで先ほど作成したサブネットのIDと名前が、VPCのカラムにVPCのIDと名前が表示されます。  
 ルートテーブルのルート情報を表示すると、インターネットゲートウェイにルーティングされていることがわかります。
 
-![ルートテーブルのルート情報](/assets/images/blog/aws-vpc-ec2-routetable-route.png)
+![ルートテーブルのルート情報](/assets/images/posts/aws-vpc-ec2-routetable-route.png)
 
 ここまでの作業で構成は以下の状態になっています。
 
-![ネットワーク図(VPC)](/assets/images/blog/aws-vpc-ec2-vpc.png)
+![ネットワーク図(VPC)](/assets/images/posts/aws-vpc-ec2-vpc.png)
 
 ## 2. EC2インスタンスを起動する
 VPC内にEC2インスタンスを起動します。
@@ -71,7 +71,7 @@ EC2のダッシュボードの「インスタンスを起動」からインス�
 
 ここまでの作業で構成は以下の状態に変わりました。
 
-![ネットワーク図(VPCとEC2)](/assets/images/blog/aws-vpc-ec2-vpc-ec2.png)
+![ネットワーク図(VPCとEC2)](/assets/images/posts/aws-vpc-ec2-vpc-ec2.png)
 
 ## 3. Elastic IPアドレスをEC2インスタンスに関連付ける
 EC2のダッシュボードの左メニューから「Elastic IP」から設定を行います。
@@ -79,7 +79,7 @@ EC2のダッシュボードの左メニューから「Elastic IP」から設定�
 1. 「Elastic IP アドレスの割り当て」からElastic IPアドレスの割り当てを行います。
 2. リストからElasitc IPアドレスを選択し、アクションの「Elastic IPアドレスの関連付け」から作成したEC2インスタンスにElasitc IPアドレスを関連付けます。
 
-![ネットワーク図](/assets/images/blog/aws-vpc-ec2-network.png)
+![ネットワーク図](/assets/images/posts/aws-vpc-ec2-network.png)
 
 これでインターネットからEC2インスタンスにアクセスできるようになりました。  
 Elastic IPアドレスのパブリック DNS ホストでSSHできることが確認できます。
