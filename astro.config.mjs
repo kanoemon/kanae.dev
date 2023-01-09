@@ -10,7 +10,8 @@ import react from "@astrojs/react";
 // https://astro.build/config
 export default defineConfig({
   markdown: {
-    remarkPlugins: [remarkToc]
+    remarkPlugins: [remarkToc],
+    extendDefaultPlugins: true
   },
   integrations: [tailwind(), react()]
 });
