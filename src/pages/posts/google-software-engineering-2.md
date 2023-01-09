@@ -2,7 +2,7 @@
 layout: ../../layouts/PostLayout.astro
 title: 「Googleのソフトウェアエンジニアリング」を読んだ(中編)
 tags: ["books", "testing", "software-engineering"]
-date: 2022-10-22T00:00:00.001Z
+pubDate: 2022-10-22T00:00:00.001Z
 ---
 
 「Googleのソフトウェアエンジニアリング ―持続可能なプログラミングを支える技術、文化、プロセス」の読書メモの中編です。第11章〜15章まで。  

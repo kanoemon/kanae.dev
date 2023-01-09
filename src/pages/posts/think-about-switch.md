@@ -2,7 +2,7 @@
 layout: ../../layouts/PostLayout.astro
 title: switch文について考える
 tags: ["clean-code"]
-date: 2020-11-03T00:00:00.001Z
+pubDate: 2020-11-03T00:00:00.001Z
 ---
 
 switch文は使うな、という言葉を見かけたことがある方は多いのではないでしょうか。   

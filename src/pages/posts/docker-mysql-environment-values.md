@@ -2,7 +2,7 @@
 layout: ../../layouts/PostLayout.astro
 title: "docker-composeのMySQLのイメージの環境変数"
 tags: ["docker"]
-date: 2020-09-05T00:00:00.001Z
+pubDate: 2020-09-05T00:00:00.001Z
 ---
 
 docker-composeでコンテナ内で環境変数を設定するには、docker-compose.ymlでenvironmentキーを使って指定します。

@@ -2,7 +2,7 @@
 layout: ../../layouts/PostLayout.astro
 title: 単一責任の原則(SRP)
 tags: ["solid", "clean-code"]
-date: 2020-10-14T00:00:00.001Z
+pubDate: 2020-10-14T00:00:00.001Z
 ---
 
 SOLID原則のひとつ、単一責任の原則。  

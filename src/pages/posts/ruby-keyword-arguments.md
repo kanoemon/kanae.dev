@@ -2,7 +2,7 @@
 layout: ../../layouts/PostLayout.astro
 title: Rubyのキーワード引数
 tags: ["ruby"]
-date: 2020-10-11T00:00:00.001Z
+pubDate: 2020-10-11T00:00:00.001Z
 ---
 
 ```ruby

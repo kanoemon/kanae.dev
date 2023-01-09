@@ -2,7 +2,7 @@
 layout: ../../layouts/PostLayout.astro
 title: The Modern JavaScript Tutorial 2
 tags: ["javascript"]
-date: 2022-06-21T00:00:00.001Z
+pubDate: 2022-06-21T00:00:00.001Z
 ---
 
 <a href="https://kanoe.dev/blog/modern-javascript-tutorial-1">The Modern JavaScript Tutorial 1</a>の続きから。

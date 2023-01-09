@@ -2,7 +2,7 @@
 layout: ../../layouts/PostLayout.astro
 title: Value Objectを不変にする理由
 tags: ["clean-code", "ddd"]
-date: 2020-11-08T00:00:00.001Z
+pubDate: 2020-11-08T00:00:00.001Z
 ---
 
 Value Objectの一番の特徴は不変であることです。

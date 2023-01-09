@@ -2,7 +2,7 @@
 layout: ../../layouts/PostLayout.astro
 title: オープン・クローズドの原則(Open-Closed Principle)
 tags: ["solid", "clean-code"]
-date: 2020-10-27T00:00:00.001Z
+pubDate: 2020-10-27T00:00:00.001Z
 ---
 
 オープン・クローズドの原則(Open-Closed Principle)。  

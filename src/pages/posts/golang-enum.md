@@ -2,7 +2,7 @@
 layout: ../../layouts/PostLayout.astro
 title: Go言語でEnumを表現する
 tags: ["golang"]
-date: 2022-09-03T00:00:00.001Z
+pubDate: 2022-09-03T00:00:00.001Z
 ---
 
 GoでEnumってどう実装すればいいんだろう？と調べた時のメモ。

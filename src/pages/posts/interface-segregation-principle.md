@@ -2,7 +2,7 @@
 layout: ../../layouts/PostLayout.astro
 title: インタフェース分離の原則(Interface Segregation principle)
 tags: ["solid", "clean-code"]
-date: 2020-11-02T00:00:00.001Z
+pubDate: 2020-11-02T00:00:00.001Z
 ---
 
 インターフェース分離の原則(Interface Segregation Principle)。  

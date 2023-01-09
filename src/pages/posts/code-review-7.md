@@ -2,7 +2,7 @@
 layout: ../../layouts/PostLayout.astro
 title: コードレビューで使える7つの設計原理
 tags: ["code-review"]
-date: 2020-07-05T00:00:00.001Z
+pubDate: 2020-07-05T00:00:00.001Z
 ---
 
 「<a href="https://www.amazon.co.jp/dp/B071V7MY82?tag=note0e2a-22&linkCode=ogi&th=1&psc=1" target="_blank">プリンシプルオブプログラミング</a>」で7つの設計原理が紹介されていました。コードレビューをするときに、人によって指摘の内容や粒度がバラバラだとソフトウェアの品質にもばらつきが生じます。そのため、ブレない共通の価値観が必要になります。

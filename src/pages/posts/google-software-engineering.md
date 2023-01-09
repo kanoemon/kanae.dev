@@ -2,7 +2,7 @@
 layout: ../../layouts/PostLayout.astro
 title: 「Googleのソフトウェアエンジニアリング」を読んだ(前編)
 tags: ["books", "engineering-manager", "documentation", "software-engineering"]
-date: 2022-10-05T00:00:00.001Z
+pubDate: 2022-10-05T00:00:00.001Z
 ---
 
 「Googleのソフトウェアエンジニアリング ―持続可能なプログラミングを支える技術、文化、プロセス」を読んだ。なかなかボリュームがある本だったが、自分の仕事に直結する話も多く、とても刺激になった。  

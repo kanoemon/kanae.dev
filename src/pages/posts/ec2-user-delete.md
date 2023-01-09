@@ -2,7 +2,7 @@
 layout: ../../layouts/PostLayout.astro
 title: EC2からec2-userを削除する
 tags: ["aws"]
-date: 2020-12-13T00:00:00.001Z
+pubDate: 2020-12-13T00:00:00.001Z
 ---
 
 EC2のデフォルトユーザ、ec2-userを削除して使えなくする流れです。

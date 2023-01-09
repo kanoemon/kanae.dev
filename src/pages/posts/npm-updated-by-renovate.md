@@ -2,7 +2,7 @@
 layout: ../../layouts/PostLayout.astro
 title: npmパッケージを定期的に更新する仕組み
 tags: ["nodejs", "operations"]
-date: 2022-09-10T00:00:00.001Z
+pubDate: 2022-09-10T00:00:00.001Z
 ---
 
 この<a href="https://kanoe.dev/" target="_blank">kanoe.dev</a>のブログはNuxt.jsで作成しており、Node.jsのライブラリの定期的な更新作業が必要となっています。
