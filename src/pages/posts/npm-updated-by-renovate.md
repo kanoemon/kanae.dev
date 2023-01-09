@@ -28,7 +28,7 @@ https://docs.renovatebot.com/getting-started/installing-onboarding/
 
 設定が終わると、あとは定期的にRenovateが自動で新しいバージョンが出るとパッケージ管理のファイルを更新し、自動でPull Requestを作成してくれます。  
 
-![RenovateのPR](/img/articles/npm-updated-by-renovate/renovate-pr.png)
+![RenovateのPR](/assets/images/blog/renovate-pr.png)
 
 ## アップデートの動作確認
 
@@ -48,7 +48,7 @@ test('index test', async ({ page }) => {
 テスト時に画面を表示した後のキャプチャ画像も取得するようにしています。
 このキャプチャ画像はGithub Actionsのartifactsを使って、Github Actions上に保存しています。
 
-![E2Eテストのキャプチャ画像の保存先](/img/articles/npm-updated-by-renovate/e2etest-capture.png)
+![E2Eテストのキャプチャ画像の保存先](/assets/images/blog/e2etest-capture.png)
 
 このキャプチャ画像をダウンロードして表示崩れが起きていないかの確認をしています。表示崩れの確認は今は目視でやっています。
 
@@ -89,7 +89,7 @@ jobs:
 
 あとはPR上で結果が確認できる(表示崩れは目視での確認が必要ですが)ので、成功していれば動作確認OKということになります。
 
-![CIの結果](/img/articles/npm-updated-by-renovate/ci-result.png)
+![CIの結果](/assets/images/blog/ci-result.png)
 
 ## まとめ
 ライブラリの更新はシステムを運用していく中で必ず発生していく作業になるので、できる限り自動化して作業に時間がかからないようにしたいですね。  
