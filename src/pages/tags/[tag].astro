@@ -23,7 +23,7 @@ const { posts } = Astro.props;
     <ul>
     {posts.map((post: any) => (
         <li class="py-1">
-            <time class="text-gray-500">{new Date(post.frontmatter.date).toLocaleDateString()}</time>
+            <time class="text-gray-500">{new Date(post.frontmatter.pubDate).toLocaleDateString()}</time>
             <a href={post.url} class="text-cyan-600">
                 {post.frontmatter.title}
             </a>

@@ -3,7 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Tag from '../components/Tag.astro';
 
 const allPosts = await Astro.glob('../pages/posts/*.md');
-allPosts.sort((a, b) => Date.parse(b.frontmatter.date) - Date.parse(a.frontmatter.date));
+allPosts.sort((a, b) => Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontmatter.pubDate));
 ---
 
 <Layout title="kanae.dev" type="website">
@@ -16,7 +16,7 @@ allPosts.sort((a, b) => Date.parse(b.frontmatter.date) - Date.parse(a.frontmatte
 			</h1>
 			<div class="flex">
 				<time class="text-sm text-gray-400">
-					{new Date(post.frontmatter.date).toLocaleDateString()}
+					{new Date(post.frontmatter.pubDate).toLocaleDateString()}
 				</time>
 			</div>
 			<div>

@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 
 const allPosts = await Astro.glob('../pages/posts/*.md');
-allPosts.sort((a, b) => Date.parse(b.frontmatter.date) - Date.parse(a.frontmatter.date));
+allPosts.sort((a, b) => Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontmatter.pubDate));
 
 const years = [];
 for(let i = new Date().getFullYear(); i >= 2020; i--) {
@@ -16,10 +16,10 @@ for(let i = new Date().getFullYear(); i >= 2020; i--) {
             <h1 class="text-2xl my-4">{year}</h1>
             <ul>
             {allPosts
-                .filter((post) => new Date(post.frontmatter.date).getFullYear() == year)
+                .filter((post) => new Date(post.frontmatter.pubDate).getFullYear() == year)
                 .map((post) => (
                     <li class="py-1">
-                        <time class="text-gray-500">{new Date(post.frontmatter.date).toLocaleDateString()}</time>
+                        <time class="text-gray-500">{new Date(post.frontmatter.pubDate).toLocaleDateString()}</time>
                         <a href={post.url} class="text-cyan-600">
                             {post.frontmatter.title}
                         </a>
