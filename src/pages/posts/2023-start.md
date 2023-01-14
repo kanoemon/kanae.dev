@@ -29,6 +29,6 @@ thumbnail: ""
 
 初詣でおみくじを引いたら「焦るな急ぐな」と書いてあったので、マイペースに頑張りながら、たまにはダラけながらも1年過ごしたいなと思います。
 
-![見かけた猫](assets/images/posts/found-cat-cute.jpg)
+![見かけた猫](/assets/images/posts/found-cat-cute.jpg)
 
 (初詣に向かうときに見かけたねこ。かわいい。)

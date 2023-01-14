@@ -4,7 +4,7 @@ backend:
   branch: master
 
 media_folder: 'public/assets/images/posts'
-public_folder: 'assets/images/posts'
+public_folder: '/assets/images/posts'
 
 publish_mode: editorial_workflow
 
