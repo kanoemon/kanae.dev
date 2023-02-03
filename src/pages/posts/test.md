@@ -37,8 +37,6 @@ https://pkg.go.dev/net/http/pprof
 
 
 
-ダンマネは以下ライブラリを使ってルーティングしている。
-
 https://github.com/julienschmidt/httprouter
 
 
