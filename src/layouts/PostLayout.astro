@@ -56,16 +56,16 @@ allPosts.forEach((post, index) => {
 					<Tag tag={tag} />
 				))}
 			</div>
-			<nav class="flex my-4 gap-4">
+			<nav class="flex flex-col my-4 gap-2">
 				{posts.prev.url ? 
-				<div class="flex flex-col rounded-md py-2 px-4 flex-1 bg-gray-100 text-sm">
-					<span class="opacity-60 pb-3">previous</span>
+				<div class="rounded-md py-2 flex-1 text-sm">
+					<i class="fa fa-angle-left" aria-hidden="true"></i>
 					<a href={posts.prev.url}>{posts.prev.frontmatter.title}</a>
 				</div>
 				: null }
 				{posts.next.url ? 
-				<div class="flex flex-col rounded-md py-2 px-4 flex-1 bg-gray-100 text-sm">
-					<span class="opacity-60 pb-3">next</span>
+				<div class="rounded-md py-2 flex-1 text-sm">
+					<i class="fa fa-angle-right" aria-hidden="true"></i>
 					<a href={posts.next.url}>{posts.next.frontmatter.title}</a>
 				</div>
 				: null }
