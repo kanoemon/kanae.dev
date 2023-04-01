@@ -37,11 +37,13 @@ const { type } = Astro.props;
 		</script>
 	</head>
 	<body>
-		<Header />
-		<main class="container mx-auto px-5 lg:px-0 lg:max-w-3xl">
-			<slot />
-		</main>
-		<Footer />
+		<div class="container  mx-auto max-w-3xl">
+			<Header />
+			<main>
+				<slot />
+			</main>
+			<Footer />
+		</div>
 	</body>
 </html>
 <style is:global>
