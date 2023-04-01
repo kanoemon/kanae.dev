@@ -1,5 +1,5 @@
 ---
-import Layout from './Layout.astro';
+import HeaderlineLayout from './HeaderlineLayout.astro';
 import Tag from '../components/Tag.astro';
 
 const allPosts = await Astro.glob('../pages/posts/*.md');
@@ -33,10 +33,9 @@ allPosts.forEach((post, index) => {
 
 ---
 
-<Layout title={frontmatter.title} type="article">
+<HeaderlineLayout title={frontmatter.title} type="article" headerline={frontmatter.title}>
 	<article>
-		<header class="my-5">
-			<h1 class="text-xl lg:text-3xl mb-1">{frontmatter.title}</h1>
+		<header class="mt-5 my-8">
 			<div class="flex">
 				<time class="text-sm text-gray-400">{new Date(frontmatter.pubDate).toLocaleDateString()}</time>
 			</div>
@@ -72,11 +71,11 @@ allPosts.forEach((post, index) => {
 			</nav>
 		</footer>
 	</article>
-</Layout>
+</HeaderlineLayout>
 
 <style>
 	section :global(h2) {
-		@apply text-xl my-3 leading-relaxed;
+		@apply text-xl mb-3 mt-8 leading-relaxed;
 	}
 
 	section :global(h3) {
@@ -124,7 +123,7 @@ allPosts.forEach((post, index) => {
 	}
 
 	section :global(blockquote) {
-		@apply p-4 my-4 border-l-4 border-gray-300 bg-gray-100;
+		@apply p-4 my-4 border-l-4 border-gray-300;
 	}
 
 	section :global(section) {
