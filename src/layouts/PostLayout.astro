@@ -58,15 +58,15 @@ allPosts.forEach((post, index) => {
 			</div>
 			<nav class="flex flex-col my-4 gap-2">
 				{posts.prev.url ? 
-				<div class="rounded-md py-2 flex-1 text-sm">
+				<div>
 					<i class="fa fa-angle-left" aria-hidden="true"></i>
-					<a href={posts.prev.url}>{posts.prev.frontmatter.title}</a>
+					<a href={posts.prev.url} class="hover:text-cyan-600">{posts.prev.frontmatter.title}</a>
 				</div>
 				: null }
 				{posts.next.url ? 
-				<div class="rounded-md py-2 flex-1 text-sm">
+				<div>
 					<i class="fa fa-angle-right" aria-hidden="true"></i>
-					<a href={posts.next.url}>{posts.next.frontmatter.title}</a>
+					<a href={posts.next.url} class="hover:text-cyan-600">{posts.next.frontmatter.title}</a>
 				</div>
 				: null }
 			</nav>
