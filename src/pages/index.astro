@@ -1,15 +1,22 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Tag from '../components/Tag.astro';
 
 const allPosts = await Astro.glob('../pages/posts/*.md');
 allPosts.sort((a, b) => Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontmatter.pubDate));
 ---
 
 <Layout title="kanae.dev" type="website">
+	<div class="mt-32 text-center">
+		<img src="https://pbs.twimg.com/profile_images/1488155897268346880/XzIlmFhW_400x400.jpg" width="50px" height="50px" class=" mx-auto rounded-full">
+		<p class="my-5 max-w-sm mx-auto">
+			kanae.devはエンジニアをしているkanaeが運営している個人のWebサイトです
+		</p>
+	</div>
+	<div class="pt-5">
+		<h2>Recent Posts</h2>
 	{allPosts.map((post) => 
-		<article class="py-6">
-			<h1 class="my-1 text-2xl">
+		<article class="py-3">
+			<h1 class="my-1 font-semibold">
 				<a href={post.url}>
 					{post.frontmatter.title}
 				</a>
@@ -19,13 +26,9 @@ allPosts.sort((a, b) => Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontma
 					{new Date(post.frontmatter.pubDate).toLocaleDateString()}
 				</time>
 			</div>
-			<div>
-				{post.frontmatter.tags.map((tag: any) => (
-					<Tag tag={tag} />
-				))}
-			</div>
 		</article>
-	)}
+	).slice(0, 5)}
+	</div>
 </Layout>
 
 <style>
