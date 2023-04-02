@@ -19,11 +19,6 @@ allPosts.sort((a, b) => Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontma
 					{new Date(post.frontmatter.pubDate).toLocaleDateString()}
 				</time>
 			</div>
-			<div>
-				{post.frontmatter.tags.map((tag: any) => (
-					<Tag tag={tag} />
-				))}
-			</div>
 		</article>
 	)}
 </HeaderlineLayout>
