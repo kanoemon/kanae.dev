@@ -51,7 +51,8 @@ allPosts.forEach((post, index) => {
 					<li><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></li>
 					</ul>
 			</div>
-			<div class="py-4">
+			<div>
+				<i class="fa fa-tags" aria-hidden="true"></i>
 				{frontmatter.tags.map((tag: any) => (
 					<Tag tag={tag} />
 				))}
