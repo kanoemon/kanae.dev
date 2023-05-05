@@ -41,7 +41,7 @@ allPosts.forEach((post, index) => {
 				{frontmatter.title}
 			</h1>
 		</header>
-		<section>
+		<section class="prose">
 			<slot />
 		</section>
 		<footer class="mt-5 border-t">
@@ -77,59 +77,4 @@ allPosts.forEach((post, index) => {
 </Layout>
 
 <style>
-	section :global(h2) {
-		@apply text-xl mb-3 mt-8 leading-relaxed;
-	}
-
-	section :global(h3) {
-		@apply text-lg my-3.5 leading-relaxed;
-	}
-
-	section :global(h4) {
-		@apply text-base my-4 leading-relaxed;
-	}
-
-	section :global(p) {
-		@apply my-4 leading-relaxed;
-	}
-
-	section :global(a) {
-		@apply text-cyan-600;
-	}
-
-	section :global(ul) {
-		@apply my-4 pl-6 list-disc;
-	}
-
-	section :global(ol) {
-		@apply my-4 pl-6 list-decimal;
-	}
-
-	section :global(pre) {
-		@apply p-4 my-2;
-	}
-
-	section :global(table) {
-		@apply text-sm my-8;
-	}
-
-	section :global(thead) {
-		@apply border-b border-gray-300;
-	}
-
-	section :global(tr) {
-		@apply border-b border-gray-200;
-	}
-
-	section :global(td) {
-		@apply p-2;
-	}
-
-	section :global(blockquote) {
-		@apply p-4 my-4 border-l-4 border-gray-300;
-	}
-
-	section :global(section) {
-		@apply border-t border-dashed mt-10 text-xs;
-	}
 </style>
