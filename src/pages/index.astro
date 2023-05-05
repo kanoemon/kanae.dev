@@ -12,7 +12,7 @@ allPosts.sort((a, b) => Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontma
 			<time class="text-xs text-gray-500">
 				{new Date(post.frontmatter.pubDate).toLocaleDateString()}
 			</time>
-			<h1>
+			<h1 class="font-semibold">
 				<a href={post.url}>
 					{post.frontmatter.title}
 				</a>
