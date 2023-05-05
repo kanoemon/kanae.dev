@@ -37,6 +37,12 @@ const { type } = Astro.props;
 		</script>
 	</head>
 	<body>
+		<Header />
+		<main class="container mx-auto px-4">
+			<slot />
+		</main>
+		<Footer />
+
 		<div class="container  mx-auto p-2 lg:max-w-3xl">
 			<Header />
 			<main>
