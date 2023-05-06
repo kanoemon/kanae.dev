@@ -1,9 +1,24 @@
-<footer class="flex flex-col items-center mt-8 mb-4">
-  <div>
-    <ul class="flex mb-1 text-gray-500 text-2xl list-none">
-      <li><a href="https://twitter.com/kanoe" target="_blank"><i class="fab fa-twitter"></i></a></li>
-      <li><a href="https://github.com/kanoemon" target="_blank" class="ml-4"><i class="fab fa-github"></i></a></li>
-    </ul>
+---
+import Tag from './Tag.astro';
+
+const allPosts = await Astro.glob('../pages/posts/*.md');
+allPosts.sort((a, b) => Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontmatter.pubDate));
+
+const tags = [...new Set(allPosts.map((post) => post.frontmatter.tags).flat())];
+---
+
+<footer class="container mx-auto mt-8 px-4 py-8 text-sm lg:max-w-3xl">
+  <div class="py-2">
+      {tags.map((tag) => (
+          <Tag tag={tag} />
+      ))}
   </div>
-  <p class="text-sm text-gray-500">© 2020-2023. kanae.dev</p>
+  <p class="py-2">
+    <a href="/">kanae.dev</a>は技術的な話や読んだ本、その他日々の感じたことなどを書き出している<a href="/about">kanae</a>の個人Webサイトです。お問い合わせは<a href="https://twitter.com/kanoe" target="_blank">Twitter</a>などの各種SNSからお願いします。<br>
+  </p>
+  <ul class="py-2 flex flex-wrap items-center justify-center text-lg">
+    <li><a href="https://twitter.com/kanoe" target="_blank"><i class="fab fa-twitter"></i></a></li>
+    <li><a href="https://github.com/kanoemon" target="_blank" class="ml-4"><i class="fab fa-github"></i></a></li>
+  </ul>
+  <p class="text-gray-500 text-center">© 2020-2023. kanae.dev</p>
 </footer>

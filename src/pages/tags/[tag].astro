@@ -1,5 +1,6 @@
 ---
-import HeaderlineLayout from '../../layouts/HeaderlineLayout.astro';
+import Layout from '../../layouts/Layout.astro';
+import Article from '../../components/Article.astro';
 
 export async function getStaticPaths({ }) {
     const allPosts = await Astro.glob('../../pages/posts/*.md');
@@ -18,16 +19,9 @@ const { tag } = Astro.params;
 const { posts } = Astro.props;
 ---
 
-<HeaderlineLayout title={`kanae.dev - ${tag}`} type="website">
+<Layout title={`kanae.dev - ${tag}`} type="website">
     <h1 class="text-2xl my-4">Posts tagged with {tag}</h1>
-    <ul>
     {posts.map((post: any) => (
-        <li class="py-1">
-            <time class="text-gray-500">{new Date(post.frontmatter.pubDate).toLocaleDateString()}</time>
-            <a href={post.url} class="text-cyan-600">
-                {post.frontmatter.title}
-            </a>
-        </li>
+		<Article post={post} />
     ))}
-    </ul>
-</HeaderlineLayout>
+</Layout>

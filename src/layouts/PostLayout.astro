@@ -1,5 +1,5 @@
 ---
-import HeaderlineLayout from './HeaderlineLayout.astro';
+import Layout from './Layout.astro';
 import Tag from '../components/Tag.astro';
 
 const allPosts = await Astro.glob('../pages/posts/*.md');
@@ -33,31 +33,31 @@ allPosts.forEach((post, index) => {
 
 ---
 
-<HeaderlineLayout title={frontmatter.title} type="article" headerline={frontmatter.title}>
+<Layout title={frontmatter.title} type="article">
 	<article>
-		<header class="mt-5 my-8">
-			<div class="flex">
-				<time class="text-sm text-gray-400">{new Date(frontmatter.pubDate).toLocaleDateString()}</time>
-			</div>
+		<header class="mb-8">
+			<time class="text-xs text-gray-400">{new Date(frontmatter.pubDate).toLocaleDateString()}</time>
+			<h1 class="py-1 text-lg font-semibold lg:text-3xl">
+				{frontmatter.title}
+			</h1>
 		</header>
-		<section>
+		<section class="prose prose-sm sm:prose lg:prose-lg xl:prose-xl">
 			<slot />
 		</section>
-		<footer class="mt-5 border-t">
-			<div class="my-4">
-				<span class="text-xs font-semibold">Share this:</span>
-				<ul class="flex">
-					<li class="pr-3"><a href="https://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="basic-label-counter" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/v4/public/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></li>
-					<li><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></li>
-					</ul>
-			</div>
-			<div>
+		<footer class="mt-8">
+			<div class="text-sm">
 				<i class="fa fa-tags" aria-hidden="true"></i>
 				{frontmatter.tags.map((tag: any) => (
 					<Tag tag={tag} />
 				))}
 			</div>
-			<nav class="flex flex-col my-4 gap-2">
+			<div class="my-4">
+				<ul class="flex">
+					<li class="pr-3"><a href="https://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="basic-label-counter" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/v4/public/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></li>
+					<li><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></li>
+					</ul>
+			</div>
+			<nav class="flex flex-col my-4 gap-2 text-sm">
 				{posts.prev.url ? 
 				<div>
 					<i class="fa fa-angle-left" aria-hidden="true"></i>
@@ -73,62 +73,7 @@ allPosts.forEach((post, index) => {
 			</nav>
 		</footer>
 	</article>
-</HeaderlineLayout>
+</Layout>
 
 <style>
-	section :global(h2) {
-		@apply text-xl mb-3 mt-8 leading-relaxed;
-	}
-
-	section :global(h3) {
-		@apply text-lg my-3.5 leading-relaxed;
-	}
-
-	section :global(h4) {
-		@apply text-base my-4 leading-relaxed;
-	}
-
-	section :global(p) {
-		@apply my-4 leading-relaxed;
-	}
-
-	section :global(a) {
-		@apply text-cyan-600;
-	}
-
-	section :global(ul) {
-		@apply my-4 pl-6 list-disc;
-	}
-
-	section :global(ol) {
-		@apply my-4 pl-6 list-decimal;
-	}
-
-	section :global(pre) {
-		@apply p-4 my-2;
-	}
-
-	section :global(table) {
-		@apply text-sm my-8;
-	}
-
-	section :global(thead) {
-		@apply border-b border-gray-300;
-	}
-
-	section :global(tr) {
-		@apply border-b border-gray-200;
-	}
-
-	section :global(td) {
-		@apply p-2;
-	}
-
-	section :global(blockquote) {
-		@apply p-4 my-4 border-l-4 border-gray-300;
-	}
-
-	section :global(section) {
-		@apply border-t border-dashed mt-10 text-xs;
-	}
 </style>

@@ -37,13 +37,11 @@ const { type } = Astro.props;
 		</script>
 	</head>
 	<body>
-		<div class="container  mx-auto p-2 lg:max-w-3xl">
-			<Header />
-			<main>
-				<slot />
-			</main>
-			<Footer />
-		</div>
+		<Header />
+		<main class="container mx-auto px-4 lg:max-w-3xl">
+			<slot />
+		</main>
+		<Footer />
 	</body>
 </html>
 <style is:global>
@@ -58,8 +56,13 @@ const { type } = Astro.props;
 		font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro",
     "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
 	}
+
 	code {
 		font-family: "Source Code Pro", Monaco, Inconsolata, monospace;
 		@apply text-sm;
+	}
+
+	a:hover {
+		@apply underline;
 	}
 </style>
