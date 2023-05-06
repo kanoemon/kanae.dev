@@ -1,15 +1,22 @@
-<footer class="px-4 py-8 text-sm">
+---
+import Tag from './Tag.astro';
+
+const allPosts = await Astro.glob('../pages/posts/*.md');
+allPosts.sort((a, b) => Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontmatter.pubDate));
+
+const tags = [...new Set(allPosts.map((post) => post.frontmatter.tags).flat())];
+---
+
+<footer class="container mx-auto mt-8 px-4 py-8 text-sm lg:max-w-3xl">
+  <div class="py-2">
+      {tags.map((tag) => (
+          <Tag tag={tag} />
+      ))}
+  </div>
   <p class="py-2">
-    <a href="/">kanae.dev</a>は<a href="/about">kanae</a>が運営している個人のWebサイトです。
+    <a href="/">kanae.dev</a>は技術的な話や読んだ本、その他日々の感じたことなどを書き出している<a href="/about">kanae</a>の個人Webサイトです。お問い合わせは<a href="https://twitter.com/kanoe" target="_blank">Twitter</a>などの各種SNSからお願いします。<br>
   </p>
-  <nav>
-    <ul class="py-2 flex flex-wrap items-center justify-center">
-      <li class="mr-2">About</li>
-      <li class="mr-2">Tags</li>
-      <li>Privacy</li>
-    </ul>
-  </nav>
-  <ul class="py-2 flex flex-wrap items-center justify-center">
+  <ul class="py-2 flex flex-wrap items-center justify-center text-lg">
     <li><a href="https://twitter.com/kanoe" target="_blank"><i class="fab fa-twitter"></i></a></li>
     <li><a href="https://github.com/kanoemon" target="_blank" class="ml-4"><i class="fab fa-github"></i></a></li>
   </ul>

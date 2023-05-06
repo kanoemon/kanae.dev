@@ -1,27 +1,16 @@
 ---
-import HeaderlineLayout from '../layouts/HeaderlineLayout.astro';
-import Tag from '../components/Tag.astro';
+import Layout from '../layouts/Layout.astro';
+import Article from '../components/Article.astro';
 
 const allPosts = await Astro.glob('../pages/posts/*.md');
 allPosts.sort((a, b) => Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontmatter.pubDate));
 ---
 
-<HeaderlineLayout title="kanae.dev" type="website" headerline="Blog">
+<Layout title="kanae.dev" type="website">
 	{allPosts.map((post) => 
-		<article class="py-4">
-			<h1 class="my-1 font-semibold">
-				<a href={post.url}>
-					{post.frontmatter.title}
-				</a>
-			</h1>
-			<div class="flex">
-				<time class="text-sm text-gray-400">
-					{new Date(post.frontmatter.pubDate).toLocaleDateString()}
-				</time>
-			</div>
-		</article>
+		<Article post={post} />
 	)}
-</HeaderlineLayout>
+</Layout>
 
 <style>
 </style>
