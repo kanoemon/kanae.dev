@@ -5,6 +5,7 @@ slug: quality-means-different-things
 pubDate: 2023-09-02T02:57:28.007Z
 tags:
   - 雑記
+thumbnail: /assets/images/posts/quality.png
 ---
 
 最近プロジェクトを進めているときに、プロジェクトチーム内でメンバー同士で同じ品質の話をしているのに認識がズレてるなぁと感じることが多い。例えばAさんは品質を担保するためにここまでテストをすれば十分だと考えていても、Bさんは不十分だと考えているといった感じ。
