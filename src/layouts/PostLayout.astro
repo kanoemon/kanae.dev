@@ -47,7 +47,9 @@ allPosts.forEach((post, index) => {
 			<h1 class="py-4 text-lg font-semibold lg:text-3xl">
 				{frontmatter.title}
 			</h1>
-			<!--<img src="../../Quality.png" class="pt-12">-->
+			{frontmatter.thumbnail ? 
+			<img src={frontmatter.thumbnail} class="pt-12">
+			: null }
 		</header>
 		<section class="mt-9 prose max-w-none">
 			<slot />
