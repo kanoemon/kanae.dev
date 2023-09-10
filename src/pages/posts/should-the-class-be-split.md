@@ -5,7 +5,7 @@ slug: should-the-class-be-split
 pubDate: 2023-09-10T04:17:48.155Z
 tags:
   - 設計
-thumbnail: ""
+thumbnail: /assets/images/posts/should-the-class-be-split-.png
 ---
 
 コードレビューで巨大なクラスを発見した時に、そのクラスを分割できる余地があるかコメントすることがある。その際に、そのクラスを分割するべきかどうかについての意見が一致しないことがたびたびある。
